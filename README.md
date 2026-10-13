@@ -1,76 +1,90 @@
 <div align="center">
 
 # ✨ AORA
-### Next-Gen Multimodal AI Assistant with 3D Embodiment, Voice Synthesis & Real-Time Lip-Sync
+### 🌐 The Next-Gen Multimodal 3D AI Companion
+**Real-Time 3D Embodiment • Ultra-Fast LLM Inference • Expressive Neural Voice • Precision Lip-Sync**
 
-[![GitHub Stars](https://img.shields.io/github/stars/Yogesh-w7/AORA?style=for-the-badge&color=ffd700)](https://github.com/Yogesh-w7/AORA/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Yogesh-w7/AORA?style=for-the-badge&color=60a5fa)](https://github.com/Yogesh-w7/AORA/network/members)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+<br />
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logoColor=white" alt="Groq" />
-  <img src="https://img.shields.io/badge/Kokoro%20TTS-7C3AED?style=for-the-badge&logoColor=white" alt="Kokoro" />
-</p>
+[![Repo Stars](https://img.shields.io/github/stars/Yogesh-w7/AORA?style=for-the-badge&logo=apachespark&color=facc15&logoColor=black)](https://github.com/Yogesh-w7/AORA/stargazers)
+[![Forks](https://img.shields.io/github/forks/Yogesh-w7/AORA?style=for-the-badge&logo=git&color=38bdf8&logoColor=white)](https://github.com/Yogesh-w7/AORA/network/members)
+[![Issues](https://img.shields.io/github/issues/Yogesh-w7/AORA?style=for-the-badge&logo=github&color=ec4899&logoColor=white)](https://github.com/Yogesh-w7/AORA/issues)
+[![License: MIT](https://img.shields.io/badge/License-MIT-34d399.svg?style=for-the-badge&logo=balance-scale&logoColor=white)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-a855f7?style=for-the-badge&logo=gitpullrequest&logoColor=white)](https://github.com/Yogesh-w7/AORA/pulls)
 
-[Key Features](#-key-features) • [System Architecture](#-system-architecture) • [Getting Started](#-getting-started) • [Asset Setup](#-asset-pipeline--prerequisites) • [Deployment](#-production-deployment) • [Disclaimer](#-medical-disclaimer)
+<br />
+
+<!-- Tech Badges -->
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+<img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white" alt="Three.js" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+<img src="https://img.shields.io/badge/Python_3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/Groq_LPU-F55036?style=flat-square&logo=fastlane&logoColor=white" alt="Groq" />
+<img src="https://img.shields.io/badge/Kokoro_TTS-8B5CF6?style=flat-square&logo=soundcharts&logoColor=white" alt="Kokoro" />
+<img src="https://img.shields.io/badge/Rhubarb_LipSync-EC4899?style=flat-square&logo=waveform&logoColor=white" alt="Rhubarb" />
+
+<br /><br />
+
+<!-- Hero Banner -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+
+[✨ Overview](#-overview) • [⚡ Features](#-core-features) • [🏗️ Architecture](#-system-architecture) • [🚀 Quickstart](#-instant-setup) • [📦 Assets](#-asset-pipeline) • [🩺 Disclaimer](#-medical-disclaimer)
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
 </div>
 
----
+<br />
 
 ## 💡 Overview
 
-**AORA** reimagines conversational AI by bridging the gap between text interfaces and human embodiment. Moving beyond static chat windows, AORA pairs ultra-low-latency Large Language Model inference via **Groq** with high-fidelity speech synthesis (**Kokoro TTS**), real-time phoneme-based viseme generation (**Rhubarb Lip-Sync**), and an interactive **3D Avatar engine** rendered natively in the browser.
+**AORA** reimagines human-computer interaction by transforming standard chatbot interfaces into an **interactive, fully embodied 3D virtual assistant**. By synchronizing real-time phoneme generation with low-latency LLM stream processing, AORA delivers human-like facial expressions, fluid gestural animations, and natural voice dynamics directly in the browser.
 
-Whether operating as a general desktop companion or an intelligent conversational triage assistant, AORA provides a modular, microservice-based architecture engineered for responsive, multi-turn dialogue.
 
----
 
-## 🌟 Key Features
+## ⚡ Core Features
 
-| Domain | Capability | Description |
-| :--- | :--- | :--- |
-| 🧑‍🚀 **3D Embodiment** | Three.js / React Avatar | Real-time morph targets, blendshapes, facial gestures, and natural conversational idling. |
-| ⚡ **Low-Latency LLM** | Groq API Integration | Blazing-fast inference speeds to maintain real-time conversational tempo. |
-| 🎙️ **Neural Voice** | Kokoro TTS Pipeline | Expressive, low-footprint neural text-to-speech engine. |
-| 👄 **Phoneme Lip-Sync** | Rhubarb Processing | Frame-accurate audio-to-viseme translation driving mouth mechanics seamlessly. |
-| 🩺 **Clinical Assistant** | Specialized Python Backend | Dedicated service module for medical conversational flows and domain knowledge. |
-| 🧩 **Decoupled Design** | Event-Driven Architecture | Modular microservices running independently across React, Node.js, and Python. |
+| Feature | Technology | Highlight |
+| --- | --- | --- |
+| 🧑‍🚀 **Expressive 3D Avatar** | `Three.js` / `React` | Real-time blendshapes, dynamic lighting, realistic idle breathing, and eye micro-saccades. |
+| ⚡ **Sub-Second Intelligence** | `Groq Cloud LPU` | Ultra-fast token generation to eliminate conversation lag and unnatural pauses. |
+| 🎙️ **Neural Voice Output** | `Kokoro TTS` | Natural, human-like voice synthesis with high-clarity pronunciation and emotional pacing. |
+| 👄 **Phoneme-Driven Visemes** | `Rhubarb Lip-Sync` | Audio-to-viseme phonetic mapping driving frame-accurate mouth morph targets. |
+| 🩺 **Clinical Knowledge Agent** | `FastAPI` / `LangChain` | Specialized conversational triage assistant with verified retrieval parameters. |
+| 🧩 **Modular Microservices** | `Node.js` + `Python` | Decoupled client, orchestration, and speech services for horizontal scalability. |
 
 ---
 
+## 🏗️ System Architecture
 
-AORA/
-├── frontend/             # React interface, 3D Canvas, Avatar morph-target loops
-├── backend/              # Node.js orchestration layer, API routing, audio dispatcher
-├── medical-backend/      # Python microservice (Kokoro TTS, medical prompts, Groq APIs)
-├── assets/               # Excluded from Git (3D models, visemes, model weights)
-├── .gitignore
-└── README.md
+```text
+┌──────────────────────┐         WebSockets / REST         ┌──────────────────────┐
+│                      │ ◄───────────────────────────────► │                      │
+│   React Frontend     │                                   │   Node.js Backend    │
+│  • Three.js Canvas   │ ─────── Audio / Chat Input ─────► │ • Session Routing    │
+│  • Blendshape Engine │                                   │ • Audio Distribution │
+└──────────────────────┘                                   └──────────┬───────────┘
+           ▲                                                          │
+           │ Render Packets (JSON Visemes + Audio Stream)             │ Internal Dispatch
+           │                                                          ▼
+┌──────────┴───────────┐         Binary Audio Sync         ┌──────────────────────┐
+│  Rhubarb Lip-Sync    │ ◄───────────────────────────────► │ Python Microservice  │
+│ • Phoneme Extraction │                                   │ • Groq LLM Inference │
+│ • Viseme Generation  │                                   │ • Kokoro TTS Server  │
+└──────────────────────┘                                   └──────────────────────┘
 
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Instant Setup
 
 ### Prerequisites
 
-* **Node.js**: v18.0.0+ LTS
-* **Python**: v3.10+
-* **Package Managers**: `npm` or `pnpm`, `pip`
-* **External Tools**: [Rhubarb Lip-Sync Binary](https://github.com/DanielSWolf/rhubarb-lip-sync)
-* **API Credentials**: [Groq Cloud API Key](https://console.groq.com/)
-
 ---
 
-### Step-by-Step Setup
-
-#### 1. Clone the Repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone [https://github.com/Yogesh-w7/AORA.git](https://github.com/Yogesh-w7/AORA.git)
@@ -78,120 +92,78 @@ cd AORA
 
 ```
 
-#### 2. Configure Python Microservice
+---
+
+### 2️⃣ Initialize Services (3-Terminal Setup)
 
 ```bash
 cd medical-backend
 python -m venv .venv
 
-# Windows
-.\.venv\Scripts\Activate.ps1
-# macOS / Linux
+# Activate
 source .venv/bin/activate
+# Windows:
+# .\.venv\Scripts\Activate.ps1
 
 pip install -r requirements.txt
+uvicorn medical_api:app \
+  --reload --port 8000
 
 ```
-
-Launch the Python service:
-
-```bash
-uvicorn medical_api:app --reload --port 8000
-
-```
-
-#### 3. Configure Node.js Orchestration Backend
-
-Open a second terminal window:
 
 ```bash
 cd backend
 npm install
 
-```
+# Configure Secrets
+echo "PORT=5000" > .env
+echo "GROQ_API_KEY=your_key" >> .env
+echo "AI_SERVICE_URL=http://localhost:8000" >> .env
 
-Create a `.env` file in `backend/`:
-
-```env
-PORT=5000
-GROQ_API_KEY=your_groq_api_key_here
-PYTHON_SERVICE_URL=http://localhost:8000
-
-```
-
-Start the backend:
-
-```bash
 npm start
 
 ```
 
-#### 4. Launch the Frontend
-
-Open a third terminal window:
-
 ```bash
 cd frontend
 npm install
+
 npm run dev
 
 ```
 
-Visit `http://localhost:5173` to interact with AORA.
+> 🌐 Once running, open **`http://localhost:5173`** in Chrome, Edge, or Brave.
 
 ---
 
-## 🎭 Asset Pipeline & Prerequisites
+## 📦 Asset Pipeline
 
-> [!NOTE]
-> Heavy runtime binary assets (3D GLTF/GLB models, skeletal animations, and TTS weights) are excluded from the repository.
+> [!IMPORTANT]
+> Heavy binary runtime dependencies are intentionally kept out of version control to maintain a lightweight repository size.
 
-1. **Avatar Assets**: Place `.glb` models and compatible animation clips in `frontend/public/models/`.
-2. **Lip-Sync Utility**: Place the OS-appropriate Rhubarb executable in the path targeted by your backend configuration (e.g., `backend/bin/rhubarb`).
-3. **TTS Weights**: Download required Kokoro model checkpoints and verify paths in `medical-backend/kokoro_server.py`.
-
----
-
-## 🌍 Production Deployment
-
-| Component | Target Environments | Recommended Strategy |
-| --- | --- | --- |
-| **Frontend** | Vercel / Cloudflare Pages | Static build output (`npm run build`). |
-| **Orchestrator** | Railway / AWS ECS / Render | Containerized Node.js service managing WebSockets/HTTP. |
-| **AI / TTS Engine** | Modal / RunPod / Dedicated VPS | GPU-accelerated or high-compute instance for Kokoro TTS. |
+* 🧑‍🎨 **3D Models**: Place `.glb` or `.gltf` rigged character avatars inside `frontend/public/models/`.
+* 🗣️ **Rhubarb Executable**: Download the matching OS build from [Rhubarb Releases](https://github.com/DanielSWolf/rhubarb-lip-sync) and place it under `backend/bin/rhubarb`.
+* 🔊 **Kokoro Weights**: Store model checkpoints inside `medical-backend/weights/`.
 
 ---
 
 ## 🩺 Medical Disclaimer
 
 > [!WARNING]
-> AORA is designed strictly for research, exploration, and conversational prototyping. It is **not** a licensed medical diagnostic engine, certified clinical device, or clinical triage substitute. System responses must not be construed as personalized medical advice. Always seek urgent care from certified healthcare providers during critical health situations.
+> AORA is an exploratory research project designed for interactive design testing and conversational prototyping. It does **not** provide clinical diagnosis, medical counsel, or emergency triage. For critical symptoms, seek immediate professional healthcare assistance.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions make the open-source community an inspiring place to learn, inspire, and create.
+Contributions make open-source thrive. Check out open issues or follow these steps:
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'feat: add AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-Made with care by [Yogesh](https://www.google.com/search?q=https://github.com/Yogesh-w7) & the Open-Source Community.
-
-⭐ **Star this repository if you find it helpful!**
+1. **Fork** the project
+2. **Branch**: `git checkout -b feature/NewFeature`
+3. **Commit**: `git commit -m 'feat: Add NewFeature'`
+4. **Push**: `git push origin feature/NewFeature`
+5. **Open Pull Request**
 
 ---
 
-### Key Improvements Made:
-
-* **Visual Polish**: Added uniform shields.io badges, dynamic typography, and a clear ASCII architecture diagram.
-* **Structural Flow**: Grouped features into a clean domain comparison table and organized setup commands in precise multi-terminal order.
-* **Modern GitHub Elements**: Converted plain text blocks into native GitHub Markdown alerts (`> [!NOTE]`, `> [!WARNING]`).
-* **Developer Clarity**: Explicitly mapped deployment strategies and local port configurations to prevent connection issues.
-
-Would you like me to customize any specific section, such as adding interactive demo GIF links or tailoring the script commands to match exact file names?
+Crafted with care by **[Yogesh](https://www.google.com/search?q=https://github.com/Yogesh-w7)** and the Open-Source Community.
