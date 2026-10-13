@@ -2,21 +2,22 @@
 
 # ✨ AORA
 ### 🌐 The Next-Gen Multimodal 3D AI Companion
+
 **Real-Time 3D Embodiment • Ultra-Fast LLM Inference • Expressive Neural Voice • Precision Lip-Sync**
 
-<br />
+<br>
 
-[![Repo Stars](https://img.shields.io/github/stars/Yogesh-w7/AORA?style=for-the-badge&logo=apachespark&color=facc15&logoColor=black)](https://github.com/Yogesh-w7/AORA/stargazers)
+[![Repo Stars](https://img.shields.io/github/stars/Yogesh-w7/AORA?style=for-the-badge&logo=github&color=facc15&logoColor=black)](https://github.com/Yogesh-w7/AORA/stargazers)
 [![Forks](https://img.shields.io/github/forks/Yogesh-w7/AORA?style=for-the-badge&logo=git&color=38bdf8&logoColor=white)](https://github.com/Yogesh-w7/AORA/network/members)
 [![Issues](https://img.shields.io/github/issues/Yogesh-w7/AORA?style=for-the-badge&logo=github&color=ec4899&logoColor=white)](https://github.com/Yogesh-w7/AORA/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-34d399.svg?style=for-the-badge&logo=balance-scale&logoColor=white)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-a855f7?style=for-the-badge&logo=gitpullrequest&logoColor=white)](https://github.com/Yogesh-w7/AORA/pulls)
 
-<br />
+<br>
 
 <!-- Tech Badges -->
 <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-<img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white" alt="Three.js" />
+<img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
 <img src="https://img.shields.io/badge/Python_3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
@@ -24,23 +25,23 @@
 <img src="https://img.shields.io/badge/Kokoro_TTS-8B5CF6?style=flat-square&logo=soundcharts&logoColor=white" alt="Kokoro" />
 <img src="https://img.shields.io/badge/Rhubarb_LipSync-EC4899?style=flat-square&logo=waveform&logoColor=white" alt="Rhubarb" />
 
-<br /><br />
+<br><br>
 
-<!-- Hero Banner -->
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
-[✨ Overview](#-overview) • [⚡ Features](#-core-features) • [🏗️ Architecture](#-system-architecture) • [🚀 Quickstart](#-instant-setup) • [📦 Assets](#-asset-pipeline) • [🩺 Disclaimer](#-medical-disclaimer)
+[✨ Overview](#-overview) • [⚡ Features](#-core-features) • [🚀 Quickstart](#-instant-setup) • [📦 Assets](#-asset-pipeline) • [🩺 Disclaimer](#-medical-disclaimer)
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
 </div>
 
-<br />
+<br>
 
 ## 💡 Overview
 
-**AORA** reimagines human-computer interaction by transforming standard chatbot interfaces into an **interactive, fully embodied 3D virtual assistant**. By synchronizing real-time phoneme generation with low-latency LLM stream processing, AORA delivers human-like facial expressions, fluid gestural animations, and natural voice dynamics directly in the browser.
+**AORA** reimagines human-computer interaction by transforming standard chatbot interfaces into an **interactive, fully embodied 3D virtual assistant**.
 
+By synchronizing real-time phoneme generation with low-latency LLM stream processing, AORA delivers human-like facial expressions, fluid gestural animations, and natural voice dynamics directly in the browser.
 
 
 ## ⚡ Core Features
@@ -56,25 +57,6 @@
 
 ---
 
-## 🏗️ System Architecture
-
-```text
-┌──────────────────────┐         WebSockets / REST         ┌──────────────────────┐
-│                      │ ◄───────────────────────────────► │                      │
-│   React Frontend     │                                   │   Node.js Backend    │
-│  • Three.js Canvas   │ ─────── Audio / Chat Input ─────► │ • Session Routing    │
-│  • Blendshape Engine │                                   │ • Audio Distribution │
-└──────────────────────┘                                   └──────────┬───────────┘
-           ▲                                                          │
-           │ Render Packets (JSON Visemes + Audio Stream)             │ Internal Dispatch
-           │                                                          ▼
-┌──────────┴───────────┐         Binary Audio Sync         ┌──────────────────────┐
-│  Rhubarb Lip-Sync    │ ◄───────────────────────────────► │ Python Microservice  │
-│ • Phoneme Extraction │                                   │ • Groq LLM Inference │
-│ • Viseme Generation  │                                   │ • Kokoro TTS Server  │
-└──────────────────────┘                                   └──────────────────────┘
-
-```
 
 ---
 
@@ -166,4 +148,22 @@ Contributions make open-source thrive. Check out open issues or follow these ste
 
 ---
 
-Crafted with care by **[Yogesh](https://www.google.com/search?q=https://github.com/Yogesh-w7)** and the Open-Source Community.
+<div align="center">
+
+---
+
+### Crafted with care by [Yogesh](https://github.com/Yogesh-w7) and the Open-Source Community
+
+Thank you for exploring **AORA**.  
+If you found this project interesting, consider giving it a ⭐️ — it really helps!
+
+[⭐ Star the Repo](https://github.com/Yogesh-w7/AORA) · 
+[🐛 Report a Bug](https://github.com/Yogesh-w7/AORA/issues) · 
+[💡 Request a Feature](https://github.com/Yogesh-w7/AORA/issues) · 
+[📖 Documentation](https://github.com/Yogesh-w7/AORA#-overview)
+
+<br>
+
+*Building more expressive and human-centered AI experiences, one commit at a time.*
+
+</div>
