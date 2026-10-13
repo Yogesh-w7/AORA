@@ -1,90 +1,124 @@
 ::: {align="center"}
-# AORA
+# ✨ AORA
 
-### Your AI-powered virtual assistant
+### An AI-powered virtual assistant with a face, a voice, and a conversation.
 
-**A conversational assistant experience combining an animated 3D avatar,
-voice and lip-sync workflows, and AI-powered responses.**
+**A modular assistant experience combining an interactive 3D avatar,
+AI-backed chat, voice workflows, and lip-sync support.**
 
-[![Repository](https://img.shields.io/badge/GitHub-Yogesh--w7%2FAORA-181717?logo=github)](https://github.com/Yogesh-w7/AORA)
-[![JavaScript](https://img.shields.io/badge/Frontend-JavaScript%20%2F%20React-blue?logo=react)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![Python](https://img.shields.io/badge/AI%20Services-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+```{=html}
+<p>
+```
+`<a href="https://github.com/Yogesh-w7/AORA">`{=html}`<img src="https://img.shields.io/badge/Explore%20the%20Code-AORA-181717?style=for-the-badge&logo=github" alt="Explore AORA on GitHub">`{=html}`</a>`{=html}
+`<a href="#-getting-started">`{=html}`<img src="https://img.shields.io/badge/Run%20Locally-Getting%20Started-2563eb?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="Getting started">`{=html}`</a>`{=html}
+```{=html}
+</p>
+```
+```{=html}
+<p>
+```
+`<img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=flat&logo=react&logoColor=20232A" alt="React">`{=html}
+`<img src="https://img.shields.io/badge/Node.js-Backend-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Node.js">`{=html}
+`<img src="https://img.shields.io/badge/Python-AI%20Services-3776AB?style=flat&logo=python&logoColor=white" alt="Python">`{=html}
+`<img src="https://img.shields.io/badge/Groq-LLM%20Integration-F55036?style=flat" alt="Groq integration">`{=html}
+```{=html}
+</p>
+```
+**[Overview](#-why-aora) · [Features](#-what-aora-brings-together) ·
+[Architecture](#-how-it-fits-together) · [Setup](#-getting-started) ·
+[Assets](#-models-animation--lip-sync) · [Deployment](#-deployment)**
 :::
 
 ------------------------------------------------------------------------
 
-## Overview
+> \[!IMPORTANT\] **Repository status:** This repository contains AORA's
+> source code and dependency manifests. Some large runtime assets---such
+> as 3D models, animation files, voice/AI models, and local tools---are
+> intentionally kept outside Git. You must configure these assets,
+> environment variables, and services before all features can run. A
+> public repository does not mean the application is already deployed.
 
-**AORA** is a full-stack virtual assistant project built around an
-interactive avatar and AI-backed conversations. The codebase separates
-the user interface, application server, and Python-based medical/AI
-services so each part can be developed and configured independently.
+## 🪄 Why AORA?
 
-The repository contains the source code and dependency manifests. Some
-large runtime assets---such as 3D models, animation files, downloaded AI
-models, and local tools---are intentionally not committed to GitHub.
-These assets must be restored or configured separately before every
-feature can run.
+AORA explores a more expressive way to interact with an AI assistant:
+not just a text box, but an experience built around an animated avatar
+and conversational responses.
 
-> **Project status:** Source code is available on GitHub. Deployment,
-> model availability, API credentials, and asset setup must be
-> configured for the target environment.
+The project is organized into separate frontend, Node.js backend, and
+Python-based medical/AI services. This separation makes it easier to
+work on the interface, application logic, and specialized services
+independently.
 
-## Highlights
+### 🌟 What AORA brings together
 
--   **Interactive avatar UI** --- React-based interface with avatar and
-    experience components.
--   **AI conversation backend** --- Node.js service for handling chat
-    requests and related application workflows.
--   **Medical AI service** --- Separate Python service files for
-    medical-assistant functionality.
--   **Voice and audio workflow** --- Backend code includes
-    audio-generation and response-processing logic.
--   **Lip-sync support** --- Designed to work with Rhubarb Lip Sync and
-    corresponding animation/audio assets.
--   **Modular structure** --- Frontend, Node.js backend, and Python
-    services are separated for easier maintenance.
+  -----------------------------------------------------------------------
+  Capability                          What it is for
+  ----------------------------------- -----------------------------------
+  🧑‍⚕️ **Interactive avatar interface** A React UI built around an avatar
+                                      and user interaction
 
-*Feature availability depends on the required API keys, runtime assets,
-models, and services being installed and configured.*
+  💬 **AI-backed conversations**      A Node.js service that handles chat
+                                      workflows and related requests
 
-## Architecture
+  🩺 **Medical-assistant service**    Separate Python code for
+                                      medical-assistant functionality
+
+  🔊 **Voice and audio workflows**    Audio generation and
+                                      response-processing integrations
+
+  👄 **Lip-sync support**             Workflow designed to use Rhubarb
+                                      Lip Sync with compatible audio and
+                                      avatar assets
+
+  🧩 **Modular codebase**             Separate application areas for
+                                      easier development and maintenance
+  -----------------------------------------------------------------------
+
+*The availability of each capability depends on its required
+dependencies, API credentials, runtime assets, and services.*
+
+## 🧭 Project map
 
 ``` text
 AORA/
-├── frontend/          # React UI, avatar and user interaction
-├── backend/           # Node.js application/API and audio workflow
-├── medical-backend/   # Python medical/AI services and integrations
+├── frontend/          # React interface and avatar experience
+├── backend/           # Node.js API, chat, and audio workflows
+├── medical-backend/   # Python medical/AI and voice-related services
 ├── .gitignore
 └── README.md
 ```
 
-### Main components
+```{=html}
+<details>
+```
+```{=html}
+<summary>
+```
+`<strong>`{=html}📁 Explore the main components`</strong>`{=html}
+```{=html}
+</summary>
+```
+### `frontend/`
 
-  -----------------------------------------------------------------------
-  Component                           Responsibility
-  ----------------------------------- -----------------------------------
-  `frontend/`                         User interface and avatar
-                                      experience, including components
-                                      such as `App.jsx`, `Avatar.jsx`,
-                                      `Experience.jsx`, and `UI.jsx`
+The user-facing interface and avatar experience. Components in this area
+include files such as `App.jsx`, `Avatar.jsx`, `Experience.jsx`, and
+`UI.jsx`.
 
-  `backend/`                          Node.js server, chat request
-                                      handling, audio processing, and
-                                      communication with other services
+### `backend/`
 
-  `medical-backend/`                  Python medical-assistant and
-                                      supporting AI/voice services,
-                                      including files such as
-                                      `medibot.py`, `medical_api.py`, and
-                                      `kokoro_server.py`
-  -----------------------------------------------------------------------
+The Node.js application server, chat request handling, audio processing,
+and communication with supporting services.
 
-## Technology
+### `medical-backend/`
 
-The repository includes code associated with the following technologies
-and tools:
+Python-based medical-assistant and supporting AI/voice code. Relevant
+files may include `medibot.py`, `medical_api.py`, and
+`kokoro_server.py`.
+
+```{=html}
+</details>
+```
+## 🧰 Technology at a glance
 
 -   **Frontend:** JavaScript, React, and 3D avatar components
 -   **Application backend:** Node.js
@@ -93,71 +127,69 @@ and tools:
 -   **Voice / audio:** Kokoro-related service code and audio-processing
     workflows
 -   **Lip-sync:** Rhubarb Lip Sync
--   **Runtime assets:** 3D models, animations, voice/model files, and
-    generated audio
+-   **Runtime assets:** 3D models, animation clips, voice/model files,
+    and generated audio
 
-The exact dependency versions are defined by the package manifests and
-Python dependency files included in the repository.
+For exact dependency versions, refer to the package manifests and Python
+dependency files included in the repository.
 
 ------------------------------------------------------------------------
 
-## Getting started
+## 🚀 Getting started
 
-### 1. Prerequisites
+### Before you begin
 
-Install the tools required by the parts of the project you want to run:
+Install the tools needed for the parts you intend to run:
 
 -   [Git](https://git-scm.com/downloads)
--   [Node.js LTS](https://nodejs.org/) and npm
--   [Python](https://www.python.org/downloads/) (a version compatible
-    with the Python dependencies)
--   Required API credentials, model files, and runtime assets for the
-    features you intend to use
+-   [Node.js LTS and npm](https://nodejs.org/)
+-   [Python](https://www.python.org/downloads/)
+-   API credentials, models, and runtime assets for the features you
+    want to enable
 
-### 2. Clone the repository
+### 1. Clone the repository
 
 ``` bash
 git clone https://github.com/Yogesh-w7/AORA.git
 cd AORA
 ```
 
-### 3. Install frontend dependencies
+### 2. Install frontend dependencies
 
 ``` bash
 cd frontend
 npm install
 ```
 
-Start the frontend using the development script defined in
-`frontend/package.json`. For a project configured with the usual Vite
-`dev` script, run:
+Start the frontend with the script defined in `frontend/package.json`.
+If the project has a Vite `dev` script, run:
 
 ``` bash
 npm run dev
 ```
 
-If that script is not present, check the `scripts` section of
-`package.json` and use the command defined there.
+> If the command is not available, open `frontend/package.json` and
+> check the `scripts` section.
 
-### 4. Install Node.js backend dependencies
+### 3. Install backend dependencies
 
-Open a second terminal from the repository root:
+Open a **new terminal** from the repository root:
 
 ``` bash
 cd backend
 npm install
 ```
 
-Start the server using the script configured in `backend/package.json`.
-If a `start` script is defined, run:
+Start the server using the script defined in `backend/package.json`. If
+it defines a `start` script:
 
 ``` bash
 npm start
 ```
 
-Keep the terminal open while using the application.
+Keep the terminal open while testing the application.
 
-### 5. Set up the Python medical backend
+### 4. Prepare the Python service
 
 Open another terminal:
 
@@ -166,205 +198,290 @@ cd medical-backend
 python -m venv .venv
 ```
 
-Activate the virtual environment on Windows PowerShell:
+Activate the environment on Windows PowerShell:
 
 ``` powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-On macOS or Linux:
+On macOS/Linux:
 
 ``` bash
 source .venv/bin/activate
 ```
 
-Install the dependencies from the repository's Python dependency file,
-if present:
+If the repository contains `requirements.txt`, install its dependencies:
 
 ``` bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-Run the appropriate service entry point according to the framework and
-instructions in the Python files. For example, **if** `medical_api.py`
-defines a FastAPI application object named `app` and `uvicorn` is
-installed, the command may be:
+Then follow the startup instructions in the relevant Python service. For
+example, **only if** `medical_api.py` defines a FastAPI object named
+`app` and Uvicorn is installed, the command may be:
 
 ``` bash
 uvicorn medical_api:app --reload --port 8000
 ```
 
-The exact startup command and port should be confirmed from the current
-service configuration. Some Python services may need to be started
-separately.
+The actual entry point, application object, and port must match the code
+in your checkout. Some Python services may need to be started
+independently.
+
+```{=html}
+<details>
+```
+```{=html}
+<summary>
+```
+`<strong>`{=html}🪟 Windows quick checklist`</strong>`{=html}
+```{=html}
+</summary>
+```
+-   Run each service in its own terminal.
+-   Activate the intended Python virtual environment before installing
+    Python packages.
+-   Keep local `.env` files private.
+-   Confirm the frontend points to the correct backend URL and port.
+-   Restore required models and animation assets before testing avatar
+    or voice features.
+
+```{=html}
+</details>
+```
 
 ------------------------------------------------------------------------
 
-## Environment configuration
+## 🔐 Environment variables & secrets
 
-Do not commit API keys, passwords, tokens, or private environment files
-to GitHub.
+Never commit API keys, passwords, tokens, or private environment files.
 
-The backend code uses a `GROQ_API_KEY` environment variable for Groq
-integration. Configure it in your local environment or in the hosting
-provider's secret settings.
-
-Example PowerShell session:
+The backend code uses `GROQ_API_KEY` for Groq integration. For a local
+PowerShell session, set it like this:
 
 ``` powershell
 $env:GROQ_API_KEY = "YOUR_NEW_API_KEY"
 ```
 
-Replace the placeholder with your own key. Do not paste real secrets
-into source code, README files, screenshots, or public issues.
+Replace the placeholder with your own key. For production, add secrets
+through the hosting provider's environment-variable settings.
 
-Also check the frontend and backend source/configuration for any service
-URLs or ports that need to match your local setup. If you create example
-environment files, use placeholder values only, such as:
+Example placeholder for a local environment file:
 
 ``` env
 GROQ_API_KEY=your_key_here
 ```
 
-**Security note:** If a real API key has ever been exposed in a public
-repository or shared source, revoke it with the provider and generate a
-replacement. Removing it from the latest commit alone does not
-invalidate the old key.
+This is an example only---do not put a real key in this README or commit
+it to Git.
 
-------------------------------------------------------------------------
+> \[!CAUTION\] If a real API key was ever exposed in public source or a
+> shared message, revoke it with the provider and create a replacement.
+> Removing a key from the latest version does not invalidate the old
+> key.
 
-## Models, animations, and Rhubarb assets
+Also verify any frontend/backend URLs, ports, and service-specific
+environment variables required by your local configuration.
 
-Some large files are intentionally excluded from this repository to keep
-the Git history small and avoid uploading machine-specific or generated
-files.
+## 🎭 Models, animation & lip-sync
 
-Depending on the features you run, you may need to restore:
+Large runtime files are excluded to keep the repository manageable.
+Depending on the features you want to run, you may need to restore:
 
 -   3D avatar model files
 -   Animation clips and supporting frontend assets
 -   Rhubarb Lip Sync executable
 -   Voice or speech model files
--   Python AI models, vector-store data, or other local datasets
--   Generated audio files needed only for local testing
+-   Python AI models, vector-store data, or local datasets
+-   Generated audio files used for local testing
 
-### Important
+### Asset setup checklist
 
-1.  Restore each asset to the path expected by the source code.
-2.  Check the code for hard-coded local Windows paths and replace them
-    with configurable paths where possible.
-3.  Confirm the license and redistribution terms before publishing model
-    files or third-party tools.
-4.  For large assets, use a suitable release/download location or Git
-    LFS when appropriate instead of committing generated files
-    repeatedly.
-5.  Never upload `.venv/`, `node_modules/`, secrets, or temporary
-    generated audio to the repository.
+-   [ ] Restore the required files to the paths expected by the source
+    code.
+-   [ ] Check for hard-coded Windows paths and make them configurable
+    where practical.
+-   [ ] Confirm the licenses and redistribution terms for third-party
+    tools and model files.
+-   [ ] Keep virtual environments, `node_modules`, secrets, and
+    temporary audio out of Git.
+-   [ ] For large assets, consider a dedicated download location or Git
+    LFS where appropriate.
 
-If the assets are not present, the corresponding avatar, voice, or
-lip-sync feature may fail or display without its intended behavior.
+If required files are absent, the corresponding avatar, animation,
+voice, or lip-sync feature may not work as intended.
 
-------------------------------------------------------------------------
+## 🌍 Deployment
 
-## Troubleshooting
+AORA contains multiple services. Deploying only the frontend does
+**not** deploy the complete application.
 
-  -----------------------------------------------------------------------
-  Issue                               What to check
-  ----------------------------------- -----------------------------------
-  `npm` or `node` is not recognized   Install Node.js LTS and reopen the
-                                      terminal.
-
-  Python package installation fails   Activate the intended virtual
-                                      environment and check
-                                      Python-version compatibility.
-
-  Chat reports a missing API key      Configure `GROQ_API_KEY` in the
-                                      backend environment and restart the
-                                      backend.
-
-  Frontend cannot reach the backend   Verify that the backend is running
-                                      and that the API URL, port, and
-                                      CORS settings match.
-
-  Avatar or animation is missing      Restore the excluded
-                                      model/animation assets and verify
-                                      the file paths used by the
-                                      frontend.
-
-  Lip-sync does not run               Confirm that Rhubarb is installed,
-                                      executable on the current operating
-                                      system, and reachable at the
-                                      configured path.
-
-  Medical or voice service fails      Check the Python service logs,
-                                      required dependencies, model files,
-                                      service URL, and available memory.
-  -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-## Deployment notes
-
-AORA consists of multiple services, so deploying the frontend alone will
-not deploy the complete application.
-
-A typical deployment requires:
+A typical deployment involves:
 
 1.  Hosting the frontend as a web application.
 2.  Hosting the Node.js backend as a separate service.
-3.  Hosting the Python services that are required by the enabled
-    features.
-4.  Setting production environment variables in the hosting provider's
-    dashboard.
-5.  Updating API URLs, CORS rules, and service ports for production.
-6.  Making required models and animation assets available to the
+3.  Hosting the Python services required by the selected features.
+4.  Configuring production environment variables securely.
+5.  Updating API URLs, CORS settings, and ports for production.
+6.  Making required models and animation assets accessible to the
     deployed services.
-7.  Testing chat, voice, avatar animation, and medical-service requests
-    after deployment.
+7.  Testing chat, audio, avatar animation, and medical-service requests
+    in the deployed environment.
 
-Check the hosting platform's limits before deploying AI models or
-audio-processing workloads. Some models require more RAM, storage, or
-CPU/GPU capacity than free hosting provides. A Windows `.exe` such as a
-Windows build of Rhubarb cannot run directly on a Linux host; use a
-compatible build or a different deployment strategy.
+### ⚙️ Before choosing a host
 
-------------------------------------------------------------------------
+-   Check CPU, RAM, disk, request-timeout, and background-process
+    limits.
+-   Large AI/voice models may exceed free-tier memory or storage.
+-   A Windows Rhubarb `.exe` will not run directly on a Linux host; use
+    a compatible build or an alternative setup.
+-   Do not assume a feature is live until its service, environment
+    variables, and required assets have been tested.
 
-## Medical-use disclaimer
+## 🛠️ Troubleshooting
+
+```{=html}
+<details>
+```
+```{=html}
+<summary>
+```
+`<strong>`{=html}`<code>`{=html}npm`</code>`{=html} or
+`<code>`{=html}node`</code>`{=html} is not recognized`</strong>`{=html}
+```{=html}
+</summary>
+```
+Install Node.js LTS, reopen the terminal, and check:
+
+``` bash
+node --version
+npm --version
+```
+
+```{=html}
+</details>
+```
+```{=html}
+<details>
+```
+```{=html}
+<summary>
+```
+`<strong>`{=html}Python dependency installation fails`</strong>`{=html}
+```{=html}
+</summary>
+```
+Activate the correct virtual environment, confirm the Python version
+supported by the dependencies, and install from the appropriate
+dependency file if one is present.
+
+```{=html}
+</details>
+```
+```{=html}
+<details>
+```
+```{=html}
+<summary>
+```
+`<strong>`{=html}Chat reports a missing API key`</strong>`{=html}
+```{=html}
+</summary>
+```
+Set `GROQ_API_KEY` in the backend environment and restart the backend
+process. Do not put the key in frontend code.
+
+```{=html}
+</details>
+```
+```{=html}
+<details>
+```
+```{=html}
+<summary>
+```
+`<strong>`{=html}The frontend cannot reach the backend`</strong>`{=html}
+```{=html}
+</summary>
+```
+Check that the backend is running, the API URL and port are correct, and
+CORS permits the frontend origin.
+
+```{=html}
+</details>
+```
+```{=html}
+<details>
+```
+```{=html}
+<summary>
+```
+`<strong>`{=html}The avatar, animation, or lip-sync is
+missing`</strong>`{=html}
+```{=html}
+</summary>
+```
+Restore the relevant assets, verify their paths, and check that Rhubarb
+is executable on the operating system where the service runs.
+
+```{=html}
+</details>
+```
+```{=html}
+<details>
+```
+```{=html}
+<summary>
+```
+`<strong>`{=html}The medical or voice service fails`</strong>`{=html}
+```{=html}
+</summary>
+```
+Inspect the Python service logs. Verify dependencies, model paths,
+service URLs, environment variables, and available memory.
+
+```{=html}
+</details>
+```
+## 🩺 Medical-use disclaimer
 
 AORA is a software project, not a substitute for a qualified healthcare
-professional. Any medical information returned by the system should be
-treated as general information and not as a confirmed diagnosis or
-personalized treatment plan. Seek professional medical care for health
-concerns and emergency assistance for urgent or life-threatening
+professional. Medical information generated by the system should be
+treated as general information---not as a confirmed diagnosis or
+personalized treatment plan. Consult a qualified professional for health
+concerns, and seek emergency care for urgent or life-threatening
 symptoms.
 
-## Contributing
+## 🤝 Contributing
 
-Contributions, bug reports, and suggestions are welcome.
+Suggestions, bug reports, and improvements are welcome.
 
 1.  Fork the repository.
 2.  Create a focused branch for your change.
 3.  Test the relevant component locally.
-4.  Open a pull request describing the change and any configuration or
-    asset requirements.
+4.  Open a pull request with a clear summary and any setup or asset
+    requirements.
 
-Please do not include credentials, private health data, or large
+Please do not include credentials, private health information, or large
 generated files in commits.
 
-## License
+## 📄 License
 
-A license has not been confirmed in this README. Before redistributing
-the project, add the appropriate `LICENSE` file and make sure the
-licenses for third-party packages, models, and assets permit your
-intended use.
+A project license has not been confirmed in this README. Before
+redistributing AORA, add the appropriate `LICENSE` file and verify that
+third-party packages, models, and assets permit your intended use.
 
 ------------------------------------------------------------------------
 
 ::: {align="center"}
-**Built with curiosity, code, and a vision for more interactive AI
-experiences.**
+### Built with curiosity, code, and a vision for more expressive AI experiences.
 
-[View repository](https://github.com/Yogesh-w7/AORA) · [Report an
-issue](https://github.com/Yogesh-w7/AORA/issues)
+**If AORA interests you, explore the code, try it locally, and share
+constructive feedback.**
+
+[⭐ View AORA on GitHub](https://github.com/Yogesh-w7/AORA) · [🐛 Report
+an issue](https://github.com/Yogesh-w7/AORA/issues)
+
+`<sub>`{=html}Clear documentation · Modular services · Responsible
+AI`</sub>`{=html}
 :::
