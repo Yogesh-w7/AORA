@@ -1,0 +1,43 @@
+# Environment files
+.env
+.env.*
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large folders (models, data, voice models)
+medical-backend/models/
+medical-backend/vectorstore/
+medical-backend/VibeVoice-Realtime-0.5B/
+medical-backend/data/
+
+# Frontend
+node_modules/
+dist/
+build/
+.next/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Backend large models
+backend/models/
+backend/ffmpeg-8.0-essentials_build/
+
+# Large binary folders
+backend/Rhubarb-Lip-Sync-1.14.0-Windows/
+backend/audios/
+frontend/public/models/
+frontend/public/animations/
+# Rhubarb test resources
+backend/Rhubarb-Lip-Sync-1.14.0-Windows/Rhubarb-Lip-Sync-1.14.0-Windows/tests/

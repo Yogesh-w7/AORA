@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+
+/* ==========================================
+   PROFESSIONAL INTERACTIVE BACKGROUND
+========================================== */
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  background:
+
+    /* ⭐ Spotlight behind avatar */
+
+    radial-gradient(
+      circle at 25% 50%,
+      rgba(14,165,233,0.22),
+      transparent 55%
+    ),
+
+    /* Base gradient */
+
+    linear-gradient(
+      135deg,
+      #dbeafe 0%,
+      #e6f4ff 45%,
+      #cfe9ff 100%
+    );
+
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
+/* ==========================================
+   FLOATING PARTICLES
+========================================== */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image:
+    radial-gradient(
+      rgba(14,165,233,0.12) 1px,
+      transparent 1px
+    );
+
+  background-size: 90px 90px;
+
+  opacity: 0.22;
+
+  animation: floatParticles 70s linear infinite;
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes floatParticles {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-220px);
+  }
+
+}
+
+
+/* ==========================================
+   VIGNETTE DEPTH
+========================================== */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      transparent 60%,
+      rgba(0,0,0,0.07)
+    );
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+/* ==========================================
+   FLOATING BUTTON PULSE RINGS
+========================================== */
+
+.pulse-ring {
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 999px;
+
+  border: 2px solid rgba(14,165,233,0.35);
+
+  animation: pulseRing 2.8s infinite;
+
+}
+
+.pulse-ring:nth-child(2) {
+  animation-delay: 1.4s;
+}
+
+@keyframes pulseRing {
+
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+
+}
+
+
+/* ==========================================
+   FLOATING BUTTON GLOW
+========================================== */
+
+.floating-glow {
+
+  box-shadow:
+    0 0 0 rgba(14,165,233,0.4),
+    0 0 35px rgba(14,165,233,0.25);
+
+  animation: floatingGlow 4s ease-in-out infinite;
+
+}
+
+@keyframes floatingGlow {
+
+  0%,100% {
+    box-shadow:
+      0 0 0 rgba(14,165,233,0.4),
+      0 0 25px rgba(14,165,233,0.25);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 rgba(14,165,233,0.4),
+      0 0 45px rgba(14,165,233,0.35);
+  }
+
+}
+
+
+/* ==========================================
+   SOFT BREATH
+========================================== */
+
+@keyframes soft-breath {
+
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+
+}
+
+.animate-soft-breath {
+  animation: soft-breath 5.5s infinite ease-in-out;
+}
+
+
+/* ==========================================
+   FLOAT BOB
+========================================== */
+
+.animate-soft-bob {
+  animation: softBob 6.5s ease-in-out infinite;
+}
+
+@keyframes softBob {
+
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+}
+
+
+/* ==========================================
+   MESSAGE FADE
+========================================== */
+
+.animate-fade-up {
+  animation: fadeUp 0.65s ease-out forwards;
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ==========================================
+   BACKGROUND FLOAT
+========================================== */
+
+.app-root {
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  position: relative;
+
+  animation: backgroundFloat 18s ease-in-out infinite;
+
+}
+
+@keyframes backgroundFloat {
+
+  0%,100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+}
+
+
+/* ==========================================
+   GREEN SCREEN MODE
+========================================== */
+
+body.greenScreen {
+  background: #00ff00 !important;
+  background-image: none !important;
+}
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0ba3ea;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.3);
+}
