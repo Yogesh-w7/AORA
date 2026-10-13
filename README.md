@@ -1,8 +1,3 @@
-Here is a polished, high-impact `README.md` rewritten with professional open-source standards—featuring clean badge aesthetics, visual architecture flow, precise quickstart steps, and modern GitHub Markdown callouts.
-
----
-
-```markdown
 <div align="center">
 
 # ✨ AORA
@@ -48,27 +43,7 @@ Whether operating as a general desktop companion or an intelligent conversationa
 
 ---
 
-## 🧭 System Architecture
 
-```text
-┌─────────────────┐        WebSocket / HTTP       ┌──────────────────┐
-│                 │ ◄───────────────────────────► │                  │
-│  React Frontend │                               │  Node.js Backend │
-│  (3D Canvas /   │ ── User Audio / Text Input ─► │ (Session / Chat) │
-│   Viseme Loop)  │                               └─────────┬────────┘
-└─────────────────┘                                         │
-         ▲                                                  │ Forward Prompts
-         │ Sync Visemes & Audio                             ▼
-┌────────┴────────┐      JSON / Audio Buffers     ┌──────────────────┐
-│ Rhubarb LipSync │ ◄───────────────────────────► │  Python Service  │
-│  Viseme Engine  │                               │ (Groq LLM + TTS) │
-└─────────────────┘                               └──────────────────┘
-
-```
-
-### Directory Layout
-
-```text
 AORA/
 ├── frontend/             # React interface, 3D Canvas, Avatar morph-target loops
 ├── backend/              # Node.js orchestration layer, API routing, audio dispatcher
